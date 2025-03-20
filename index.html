@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>assignment 17 flexboxes</title>
+    <style>
+        .header{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+            padding: 5px;
+            color:#330000;  
+        }
+        .card{
+            height:448px;
+            width:325px;
+            background-color:#F5ECD5 ;
+            border:solid #e69900 0.5px;
+            border-radius: 7px;
+            margin:10px; 
+            display:inline-block;
+            box-shadow:1px -1px 4px 0.2px;   
+        }
+        .card:hover{
+            transition: 0.5s;
+            box-shadow:4px -3px 12px 3px #3D3D3D ;
+            
+        }
+        .img-padding1{
+           padding: 10px;
+
+        }
+        .img-padding2{
+           padding: 13px;
+
+        }
+        
+        
+        .price{
+            color: #003333;
+            font-size: 22px;
+            padding-left: 5%;
+            
+        }
+        .info{
+            padding-left: 5%;
+        }
+        .btn{
+            width:100px;
+            padding:5px;
+            color:white;
+            background-color:#b35900 ;
+            border-radius: 5px;
+            border:none;
+            margin-left: 31%;
+            cursor: pointer;
+        }
+        .btn:hover{
+            transition: 0.5s;
+            box-shadow: 2px -1px 5px 2px #3D3D3D ;
+        }
+        .btn-cart{
+            width: 150px;
+            padding: 8px;
+            color: white;
+            background-color: #b35900;
+            border-radius: 7px;
+            border:none;
+            cursor: pointer;
+            
+        }
+        .btn-cart:hover{
+            transition: 0.5s;
+            box-shadow: 2px -1px 5px 2px #3D3D3D ;
+        }
+        .header2{
+            font-size: 27px;
+            color: #3D3D3D;
+            padding-left: 5%;
+        }
+        .container{
+            height:490px;
+            width:1445px;
+            background-color: beige;
+            padding:10px;
+            border-radius: 10px;
+            margin:17px;
+            display:flex;
+            flex-direction: row;
+        }
+        
+    </style>
+    
+
+</head>
+<body> 
+    <h1 class="header">Mithaas!</h1><br>
+    
+    <div class="container">
+    <div class="card" >
+        <img src="./pic.img/gulab jamun.jpg" alt="gulab jamun" height="200" class="img-padding1">
+        <p class="header2"> <u> Gulab Jamun </u>❤️ 
+             <p class="price"> ₹200/kg </p> 
+             <p class="info"> (Gulab jamun is a sweet confectionery or dessert in India)</p>
+             <button class="btn">Add to cart</button>
+        </p>
+    </div>
+
+     <div class="card" >
+            <img src="./pic.img/jalebi.jpg" alt="jalebi" height="200" class="img-padding2">
+            <p class="header2"> <u> Jalebi </u>❤️ 
+                 <p class="price"> ₹90/kg </p> 
+                 <p class="info"> (Jalebi is a popular sweet snack in the Indian subcontinent)</p>
+                 <button class="btn">Add to cart</button>
+            </p>
+    </div>
+
+     <div class="card" >
+            <img src="./pic.img/motichur laddu.jpg" alt="motichur laddu" height="200" class="img-padding1">
+            <p class="header2"> <u>Motichur Laddu </u>❤️ 
+                 <p class="price"> ₹190/kg </p> 
+                 <p class="info"> (Motichur laddu delish melt in the mouth ladoo made mainly with gram flour, sugar)</p>
+                 <button class="btn">Add to cart</button>
+            </p>
+     </div>
+    </div>
+        <br><br><br><br>
+        
+           <p style="margin-left: 43%;"> 
+            <img src="./pic.img/cart-shopping-solid.svg" height="50px" alt="cart img"> <button class="btn-cart">view cart</button>
+           </p>
+        
+    <script src="https://kit.fontawesome.com/1605bb7187.js" crossorigin="anonymous"></script>   
